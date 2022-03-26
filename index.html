@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 函数式编程指南中文版 | JavaScript 函数式编程指南中文版</title>
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/mostly-adequate-guide-chinese/assets/css/0.styles.e373d42e.css" as="style"><link rel="preload" href="/mostly-adequate-guide-chinese/assets/js/app.e22f068f.js" as="script"><link rel="preload" href="/mostly-adequate-guide-chinese/assets/js/2.35b03a7f.js" as="script"><link rel="preload" href="/mostly-adequate-guide-chinese/assets/js/13.54fbdcfe.js" as="script"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/10.9ff47bf3.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/11.1613d626.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/12.5037078b.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/14.85525b84.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/15.b0675b5a.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/16.44cb92b7.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/17.15cbb2bc.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/18.9af46e61.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/19.8afc0231.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/3.c39a0118.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/4.47caff48.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/5.209b7f11.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/6.5b22d12f.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/7.9f81ff05.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/8.95229e13.js"><link rel="prefetch" href="/mostly-adequate-guide-chinese/assets/js/9.2faab3a0.js">
+    <link rel="stylesheet" href="/mostly-adequate-guide-chinese/assets/css/0.styles.e373d42e.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JNFKK7VGLS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-JNFKK7VGLS');
+    </script>
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mostly-adequate-guide-chinese/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">JavaScript 函数式编程指南中文版</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/mostly-adequate-guide-chinese/ch1.html" class="sidebar-link">第 1 章：我们在做什么？</a></li><li><a href="/mostly-adequate-guide-chinese/ch2.html" class="sidebar-link">第 2 章: 一等公民的函数</a></li><li><a href="/mostly-adequate-guide-chinese/ch3.html" class="sidebar-link">第 3 章：纯函数的好处</a></li><li><a href="/mostly-adequate-guide-chinese/ch4.html" class="sidebar-link">第 4 章: 柯里化（curry）</a></li><li><a href="/mostly-adequate-guide-chinese/ch5.html" class="sidebar-link">第 5 章: 代码组合（compose）</a></li><li><a href="/mostly-adequate-guide-chinese/ch6.html" class="sidebar-link">第 6 章: 示例应用</a></li><li><a href="/mostly-adequate-guide-chinese/ch7.html" class="sidebar-link">第 7 章: Hindley-Milner 类型签名</a></li><li><a href="/mostly-adequate-guide-chinese/ch8.html" class="sidebar-link">第 8 章: 特百惠</a></li><li><a href="/mostly-adequate-guide-chinese/ch9.html" class="sidebar-link">第 9 章: Monad</a></li><li><a href="/mostly-adequate-guide-chinese/ch10.html" class="sidebar-link">第 10 章：Applicative Functor</a></li><li><a href="/mostly-adequate-guide-chinese/ch11.html" class="sidebar-link">第 11 章：再转换一次，就很自然</a></li><li><a href="/mostly-adequate-guide-chinese/ch12.html" class="sidebar-link">第 12 章：遍历</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript-函数式编程指南中文版"><a href="#javascript-函数式编程指南中文版" class="header-anchor">#</a> JavaScript 函数式编程指南中文版</h1> <p><img src="/mostly-adequate-guide-chinese/assets/img/cover.6485e744.png" alt="JavaScript 函数式编程指南中文版 封面"></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/mostly-adequate-guide-chinese/assets/js/app.e22f068f.js" defer></script><script src="/mostly-adequate-guide-chinese/assets/js/2.35b03a7f.js" defer></script><script src="/mostly-adequate-guide-chinese/assets/js/13.54fbdcfe.js" defer></script>
+  </body>
+</html>
